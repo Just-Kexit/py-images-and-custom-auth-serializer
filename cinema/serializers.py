@@ -147,7 +147,7 @@ class MovieSessionDetailSerializer(MovieSessionSerializer):
     taken_places = TicketSeatsSerializer(
         source="tickets",
         many=True,
-        ead_only=True
+        read_only=True
     )
 
     class Meta:
